@@ -1,15 +1,9 @@
 new Vue({
     el:'#app',
     data: {
-        title : "sajal",
-        cars : ['toyota','BMW','Alion'],
-        object: {
-            name : 'sajal',
-            age: '26'
-        },
-        greeting: (a,b)=>{
-                s =a+b;
-            return s;
-        }
-    }
+        src: "https://picsum.photos/seed/picsum/200/300",
+        alt: 'nai',
+        link : "https://www.facebook.com/",
+    },
+    
 });
