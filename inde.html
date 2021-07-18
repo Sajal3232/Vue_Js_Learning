@@ -8,8 +8,15 @@
 </head>
 <body>
     <div id="app">
-        <img :src="src" alt="">
-        <a :href="link">click</a>
+        <p v-if="userAge >= allowedAge">
+            this is userage f
+        </p>
+        <p v-else-if="userInfo()">
+            this is  good
+        </p>
+        <p v-else>
+            hello
+        </p>
     </div>
     <script src="app.js"></script>
 </body>

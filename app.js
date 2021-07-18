@@ -1,9 +1,15 @@
 new Vue({
     el:'#app',
     data: {
-        src: "https://picsum.photos/seed/picsum/200/300",
-        alt: 'nai',
-        link : "https://www.facebook.com/",
+        user: "sajal",
+        userAge: 3,
+        allowedAge: 19
+    },
+
+    methods: {
+        userInfo(){
+           return this.user === "sajal" ? true : false;
+        }
     },
     
 });
