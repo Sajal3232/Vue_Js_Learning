@@ -1,16 +1,14 @@
 new Vue({
     el:'#app',
     data: {
-        cars: ["BMW","TOYOTA","ALION"],
-        user: {
-            name:'sajal',
-            age: 26
-        }
-    }, //for index ,value
+        user: 'sajal'
+    },
 
     methods: {
-        userInfo(){
-           return this.user === "sajal" ? true : false;
+        update(){
+            setTimeout(()=>{
+                this.user = 'sajib'
+            },2000)
         }
     },
     
