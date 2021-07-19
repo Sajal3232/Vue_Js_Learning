@@ -1,15 +1,17 @@
 new Vue({
     el:'#app',
     data: {
-        title : "sajal",
-        cars : ['toyota','BMW','Alion'],
-        object: {
-            name : 'sajal',
-            age: '26'
-        },
-        greeting: (a,b)=>{
-                s =a+b;
-            return s;
+        cars: ["BMW","TOYOTA","ALION"],
+        user: {
+            name:'sajal',
+            age: 26
         }
-    }
+    }, //for index ,value
+
+    methods: {
+        userInfo(){
+           return this.user === "sajal" ? true : false;
+        }
+    },
+    
 });
