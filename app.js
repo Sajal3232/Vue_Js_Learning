@@ -1,10 +1,12 @@
 new Vue({
     el:'#app',
     data: {
-        user: "sajal",
-        userAge: 3,
-        allowedAge: 19
-    },
+        cars: ["BMW","TOYOTA","ALION"],
+        user: {
+            name:'sajal',
+            age: 26
+        }
+    }, //for index ,value
 
     methods: {
         userInfo(){

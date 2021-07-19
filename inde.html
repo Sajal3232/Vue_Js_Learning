@@ -8,15 +8,12 @@
 </head>
 <body>
     <div id="app">
-        <p v-if="userAge >= allowedAge">
-            this is userage f
+        <p v-for="(car,index) in cars">
+           {{index}} : {{car}}
         </p>
-        <p v-else-if="userInfo()">
-            this is  good
-        </p>
-        <p v-else>
-            hello
-        </p>
+        <p v-for="(value,index,key) in user">
+            {{key}} : {{index}} : {{value}} 
+         </p>
     </div>
     <script src="app.js"></script>
 </body>
