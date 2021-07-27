@@ -8,12 +8,13 @@
 </head>
 <body>
     <div id="app">
-        <button v-on:click ="userInfo">Click me</button>
-        <div  v-on:mousemove="divLand" class="land">
-            hover me
-        </div>
-        <p>X: {{x}} </p>
-        <p>Y: {{y}} </p>
+        <p>{{name}}</p>
+        <button v-on:click ="userInfo('sajib',$event)">Click me</button>
+
+        <form v-on:submit.prevent="usersubmit">
+            <input type="text">
+            <button type="submit">submit</button>
+        </form>
     </div>
 
     <script src="app.js"></script>

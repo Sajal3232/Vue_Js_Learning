@@ -2,20 +2,17 @@ new Vue({
     el:'#app',
     data: {
             name:'sajal',
-            x: 0,
-            y: 0
     }, 
 
     methods: {
-        userInfo(){
-           this.name = "sajib" ;
+        userInfo(newname,event){
+           this.name = newname ;
+           console.log(event);
         },
 
-        divLand(event){
-            this.x = event.clientX;
-            this.y = event.clientY;
-
-        }
+        usersubmit(){
+            console.log('success');
+         },
     },
     
 });
