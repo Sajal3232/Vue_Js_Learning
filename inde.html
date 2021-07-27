@@ -8,11 +8,14 @@
 </head>
 <body>
     <div id="app">
-        <p>{{name}}</p>
-        <button v-on:click ="userInfo('sajib',$event)">Click me</button>
 
-        <form v-on:submit.prevent="usersubmit">
-            <input type="text">
+        <form v-on:submit.prevent="userInfo">
+            <label>first name</label>
+            <input type="text" v-model="formData.firstName">
+            <hr>
+            <label>last name</label>
+            <input type="text" v-model="formData.lastName">
+            <hr>
             <button type="submit">submit</button>
         </form>
     </div>
