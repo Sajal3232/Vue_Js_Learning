@@ -1,15 +1,20 @@
 new Vue({
     el:'#app',
     data: {
-        user: 'sajal'
-    },
+            name:'sajal',
+    }, 
 
     methods: {
-        update(){
-            setTimeout(()=>{
-                this.user = 'sajib'
-            },2000)
-        }
+        userInfo(newname,event){
+           this.name = newname ;
+           console.log(event);
+        },
+
+        usersubmit(){
+            console.log('success');
+         },
+    },
+
     },
     
 });

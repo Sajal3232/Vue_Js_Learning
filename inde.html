@@ -8,11 +8,22 @@
 </head>
 <body>
     <div id="app">
-        <p>{{user}}</p>
-        <p v-once>{{user}}</p>
+        <p>{{name}}</p>
+        <button v-on:click ="userInfo('sajib',$event)">Click me</button>
 
-        {{update()}}
+        <form v-on:submit.prevent="usersubmit">
+            <input type="text">
+            <button type="submit">submit</button>
+        </form>
     </div>
+
     <script src="app.js"></script>
+    <style>
+        .land{
+            background: red;
+            height: 200px;
+            width: 400px;
+        }
+    </style>
 </body>
 </html>
