@@ -1,16 +1,20 @@
 new Vue({
     el:'#app',
     data: {
-        cars: ["BMW","TOYOTA","ALION"],
-        user: {
             name:'sajal',
-            age: 26
-        }
-    }, //for index ,value
+            x: 0,
+            y: 0
+    }, 
 
     methods: {
         userInfo(){
-           return this.user === "sajal" ? true : false;
+           this.name = "sajib" ;
+        },
+
+        divLand(event){
+            this.x = event.clientX;
+            this.y = event.clientY;
+
         }
     },
     

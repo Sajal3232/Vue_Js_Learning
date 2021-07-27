@@ -8,13 +8,22 @@
 </head>
 <body>
     <div id="app">
-        <p v-for="(car,index) in cars">
-           {{index}} : {{car}}
-        </p>
-        <p v-for="(value,index,key) in user">
-            {{key}} : {{index}} : {{value}} 
-         </p>
+        <button v-on:click ="userInfo">Click me</button>
+        <div  v-on:mousemove="divLand" class="land">
+            hover me
+        </div>
+        <p>X: {{x}} </p>
+        <p>Y: {{y}} </p>
     </div>
+    
+
     <script src="app.js"></script>
+    <style>
+        .land{
+            background: red;
+            height: 200px;
+            width: 400px;
+        }
+    </style>
 </body>
 </html>
