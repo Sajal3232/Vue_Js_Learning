@@ -14,5 +14,7 @@ new Vue({
             console.log('success');
          },
     },
+
+    },
     
 });
