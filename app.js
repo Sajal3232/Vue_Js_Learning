@@ -1,22 +1,14 @@
-const app = new Vue({
-    el:'#app',
-    data: {
-        value: "1st",
-    },
-
-    methods: {
-        insta(){ 
-            app1.value = 'sajal';
-        }
-    },
-});
+tmp =`<p>this is my {{ name }}</p>`;
 
 const app1 = new Vue({
-    el:'#app1',
     data: {
-        value: "2st",
+        name: "sajal"
     },
+    template: tmp,
     
 });
 
+setTimeout(() => {
+    app1.$mount('#app');
+}, 2000);
 
