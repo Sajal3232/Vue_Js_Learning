@@ -8,16 +8,16 @@
 </head>
 <body>
     <div id="app">
+        <button v-on:click="a++">Btn A</button>
+        <button v-on:click="b++">Btn B</button>
 
-        <form v-on:submit.prevent="userInfo">
-            <label>first name</label>
-            <input type="text" v-model="formData.firstName">
-            <hr>
-            <label>last name</label>
-            <input type="text" v-model="formData.lastName">
-            <hr>
-            <button type="submit">submit</button>
-        </form>
+        <p>A = {{ a }}</p>
+        <p>B = {{ b }}</p>
+
+        <p>Salary + A = {{ addtoA }} </p>
+        <p>Salary + B = {{ addtoB }} </p>
+
+        
     </div>
 
     <script src="app.js"></script>
