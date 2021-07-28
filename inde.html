@@ -8,25 +8,14 @@
 </head>
 <body>
     <div id="app">
-        <button v-on:click="a++">Btn A</button>
-        <button v-on:click="b++">Btn B</button>
-
-        <p>A = {{ a }}</p>
-        <p>B = {{ b }}</p>
-
-        <p>Salary + A = {{ addtoA }} </p>
-        <p>Salary + B = {{ addtoB }} </p>
-
+        <p>this is first instance {{ value }}</p>
+        <button v-on:click="insta ">Btn A</button>
         
+    </div>
+    <div id="app1">
+        <p>this is second instance {{ value }}</p>
     </div>
 
     <script src="app.js"></script>
-    <style>
-        .land{
-            background: red;
-            height: 200px;
-            width: 400px;
-        }
-    </style>
 </body>
 </html>

@@ -1,21 +1,22 @@
-new Vue({
+const app = new Vue({
     el:'#app',
     data: {
-        a : 0,
-        b: 0,
-        salary:10
+        value: "1st",
     },
 
-    computed: {
-        addtoA(){
-            console.log("A");
-            return this.a + this.salary;
-        },
-        addtoB(){
-            console.log("B");
-            return this.b + this.salary;
+    methods: {
+        insta(){ 
+            app1.value = 'sajal';
         }
+    },
+});
 
+const app1 = new Vue({
+    el:'#app1',
+    data: {
+        value: "2st",
     },
     
 });
+
+
